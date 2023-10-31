@@ -1,3 +1,5 @@
+Fankai-Pack
+
 Si vous utilisez un logiciel qui lit les .NFO (Jellyfin, Kodi...), pas besoin de lire le tuto Plex mais je vous invite à lire les remarques.
 
 I) Petit tutoriel pour avoir nos productions sur Plex dans de meilleures conditions :
