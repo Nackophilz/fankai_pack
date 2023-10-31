@@ -1,0 +1,44 @@
+﻿﻿Bonjour à toutes et à tous ! 
+
+Petit point pour préciser le fonctionnement des deux utilitaires. 
+
+Si vous partez “from scratch” donc de zéro pour créer votre pack sur Plex :
+
+Je vous conseille de commencer par le Plex Config que vous n'utiliserez qu'une fois, vous pourrez ensuite utiliser le fankai utilitaire. 
+
+Ce dernier vous permettra de créer votre bibliothèque dans Plex, de la nommée, et de configurer l’agent, puis de placer l'utilitaire sur le bureau si il le peut.
+
+/!\Attention/!\
+Vous devez d’abord mettre l’agent XBMC en place (copie du dossier dans le répertoire de plug-in de Plex puis redémarrer ce dernier).
+Petit résumé d'où peut ce trouver le dossier plug-in selon votre système ou est installé plex : 
+
+* '%LOCALAPPDATA%\Plex Media Server\'                                        # Windows Vista/7/8
+* '%USERPROFILE%\Local Settings\Application Data\Plex Media Server\'         # Windows XP, 2003, Home Server
+* '$HOME/Library/Application Support/Plex Media Server/'                     # Mac OS
+* '$PLEX_HOME/Library/Application Support/Plex Media Server/',               # Linux
+* '/var/lib/plexmediaserver/Library/Application Support/Plex Media Server/', # Debian,Fedora,CentOS,Ubuntu
+* '/usr/local/plexdata/Plex Media Server/',                                  # FreeBSD
+* '/usr/pbi/plexmediaserver-amd64/plexdata/Plex Media Server/',              # FreeNAS
+* '${JAIL_ROOT}/var/db/plexdata/Plex Media Server/',                         # FreeNAS
+* '/c/.plex/Library/Application Support/Plex Media Server/',                 # ReadyNAS
+* '/share/MD0_DATA/.qpkg/PlexMediaServer/Library/Plex Media Server/',        # QNAP
+* '/volume1/Plex/Library/Application Support/Plex Media Server/',            # Synology, Asustor
+* '/raid0/data/module/Plex/sys/Plex Media Server/',                          # Thecus
+* '/raid0/data/PLEX_CONFIG/Plex Media Server/'                               # Thecus Plex community
+ 
+
+Pour les utilisateurs LINUX et macOS : 
+
+N’oubliez pas de donner les droits à l’utilitaire Fankai de s’exécuter (un petit chmod 777 ./vers_le_binaire_fankai suffira) il s'occupera de donner les droits aux autres lui même.
+
+Sinon vous ne pourrez pas l’utiliser ce serait dommage ;) 
+
+Pour les autres, prenez simplement le Fankai tout court pour commencer l'aventure ! 
+—---------------------------------
+
+Concernant le Fankai-Utilitaire, voici un résumé des différentes capacités : 
+
+(1) Fankai-Pack ⇾ Vous permet d'actualiser les packs Hikano automatiquement, ou en ajouter de nouveaux, ou encore de forcer une mise à jour sur un ou plusieurs packs spécifiques locaux. 
+(2) Fankai-Season ⇾ Vous permet de nommer vos saisons et faire vos descriptions de saisons automatiquement (PLEX SEULEMENT) 
+(3) Fankai-Films ⇾ Vous permet de renommer vos films afin que Plex/Kodi/Jellyfin prennent en compte correctement les films comme des épisodes. 
+(4) Fankai-Placement -> Vous permet de venir placer automatiquement vos films Kaï téléchargés dans le dossier correspondant au niveau des packs par hardlink ou par copie (suppression possible ensuite pour ce dernier).
